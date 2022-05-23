@@ -41,5 +41,3 @@ if __name__ == "__main__":
     models = fit(model, X_train, labels_train)
     predictions = predict(models, X_test)
     save_predictions(predictions, 'predictions.csv')
-
-print(1)
