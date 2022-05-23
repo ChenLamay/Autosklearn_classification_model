@@ -19,7 +19,7 @@ if __name__ == "__main__":
     #     # predictions = np.where(np.array(predictions) > 0.5, 1, 0)
     #     predictions = np.array(predictions)
     #     y = np.array(y)
-    #     return [roc_auc_score(y[:, i], predictions[i, :]) for i in range(y.shape[1])]
+    #      return [roc_auc_score(y[:, i], predictions[i, :]) for i in range(y.shape[1])]
 
     def save_predictions(predictions, filename):
         df = pd.DataFrame(np.array(predictions).T, columns=['attribute 1', 'attribute 2', 'attribute 3', 'attribute 4', 'attribute 5'])
@@ -42,3 +42,4 @@ if __name__ == "__main__":
     predictions = predict(models, X_test)
     save_predictions(predictions, 'predictions.csv')
 
+print(1)
